@@ -1,0 +1,13 @@
+.log{
+    display: flex;
+    width: 100vw;
+    align-items: center;justify-content: center;
+}
+
+.logcard{
+    display: flex;flex-direction: column;
+    height: 80vh;
+    width: 40vw;
+    align-items: center;justify-content: center;gap: 2rem;
+    /* overflow: hidden; */
+}

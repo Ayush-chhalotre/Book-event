@@ -1,0 +1,40 @@
+input{
+    height: 2rem;
+    border: none;
+    outline: none;
+    padding: .5rem;
+    background-color: rgb(95, 93, 93);
+    color: white;
+    width: 85%;
+    
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+input::placeholder{
+    color: rgb(158, 153, 153);
+    
+}
+button{
+    height: 2rem;
+    padding: .5rem;
+    border: none;
+    background-color: hotpink;
+    color: white;
+    width: 15%;
+    outline: none;
+      /* box-shadow: .5rem .5rem 1rem rgb(56, 55, 55); */
+}
+button:focus{
+    outline: none;
+    border: none;
+  
+}
+.searchbar{
+    
+    height: 2rem;
+    width: 60vw;
+    border-radius: .4rem;
+    overflow: hidden;
+}

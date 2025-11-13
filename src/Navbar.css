@@ -1,0 +1,25 @@
+.navbar{
+    background-color: black;
+    height: 15vh;
+    display: flex;
+
+}
+h1{
+    color: hotpink;
+}
+.pages{
+    display: flex;
+    gap: 1rem;
+
+}
+h2{
+    font-size: 1.5rem;
+}
+.page{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color: hotpink;
+    }
+}
+

@@ -1,0 +1,43 @@
+.cards{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-grow:inherit;
+    padding: 1rem 4rem;
+    /* border: 2px solid hotpink; */
+
+}
+.card{
+    height: 63vh;
+    width: 45vh;
+    border: 2px solid hotpink;
+    flex-direction: column;
+    display: flex;gap: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+     /* padding: .5rem; */
+}
+.cardtext{
+    height: 60%;
+    padding: 1rem;
+    display: flex;flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: .5rem;
+}
+*{
+    ::-webkit-scrollbar{display: none;}
+}
+img{
+    height: 40%;
+    object-fit: cover;
+
+}
+.pe{
+    margin: 1rem 2rem;
+}
+.book{
+width: 100%;
+}
