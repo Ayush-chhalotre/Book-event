@@ -48,8 +48,9 @@ let [cityname, setcityname] = useState("")
 let [filterd,setfilterd]= useState(data)
 let [logdata,setlogdata]=useState([])
 let [islogin,setislogin]=useState(false)
+let [myevent,setmyevents]=useState([])
   return (
-    <eventdata.Provider value={{data,setdata,cityname,setcityname,filterd,setfilterd,logdata,setlogdata,islogin,setislogin}}>
+    <eventdata.Provider value={{data,setdata,cityname,setcityname,filterd,setfilterd,logdata,setlogdata,islogin,setislogin,myevent,setmyevents}}>
        {children}
     </eventdata.Provider>
   )

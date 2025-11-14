@@ -4,7 +4,7 @@ import { Navigate, useNavigate } from 'react-router-dom'
 
 export default function Eventc(props) {
   let navigate=useNavigate()
-  const {islogin} = useContext(eventdata)
+  const {islogin,myevent,setmyevents} = useContext(eventdata)
   return (
     <div className="card" key={props.e.id}>
             <img src= 'https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2'/>
@@ -13,7 +13,9 @@ export default function Eventc(props) {
             <p>{props.e.date}</p>
             <p>{props.e.location}</p>
             <button className="book" onClick={()=>{
-              islogin?null:navigate('login')
+              islogin?
+              setmyevents([props.e,...myevent])
+              :navigate('login')
             }}>Book now</button>
             </div>
           </div>

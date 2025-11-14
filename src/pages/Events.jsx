@@ -4,7 +4,7 @@ import './events.css'
 import Searchbar from '../Searchbar'
 import eventdata from '../assets/Eventsdata'
 export default function Events() {
-  const {setdata,setfiltrd,filterd} = useContext(eventdata)
+  const {setdata,setfiltrd,filterd,data} = useContext(eventdata)
   setdata(filterd)
   console.log("dsjshfbk")
   return (
@@ -12,7 +12,7 @@ export default function Events() {
    <section>
 
    <Searchbar/>
-   <Eventscard/>
+   <Eventscard data={data}/>
    </section>
    </>
   )

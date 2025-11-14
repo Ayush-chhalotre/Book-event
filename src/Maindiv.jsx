@@ -8,6 +8,7 @@ import Events from './pages/Events'
 import Host from './pages/Host'
 import Login from './pages/Login'
 import eventdata from './assets/Eventsdata'
+import Profile from './pages/Profile'
 export default function Maindiv() {
   const {islogin} = useContext(eventdata)
   return (
@@ -23,6 +24,8 @@ export default function Maindiv() {
         
       
         <Route path='login' element={<Login/>}/>
+        <Route path='profile' element={<Profile/>}/>
+
     </Routes>
    </BrowserRouter>
     
