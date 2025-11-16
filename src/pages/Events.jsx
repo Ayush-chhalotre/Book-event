@@ -6,7 +6,7 @@ import eventdata from '../assets/Eventsdata'
 export default function Events() {
   const {setdata,setfiltrd,filterd,data} = useContext(eventdata)
   setdata(filterd)
-  console.log("dsjshfbk")
+  // console.log("dsjshfbk")
   return (
    <> 
    <section>

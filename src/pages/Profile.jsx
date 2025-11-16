@@ -13,17 +13,17 @@ export default function Profile() {
     <div className="profilediv">
         <h3>User name : {logdata?.[0]?.id}</h3>
         
-          <h3> hosted show</h3>
           <button>update detail</button>
           <button onClick={()=>{
-          let oldpass=  prompt("Enter old password")
-          if(oldpass===logdata[0].password){let newpass= prompt("Enter new password")
-            setlogdata([{...logdata[0],password:newpass}])
+            let oldpass=  prompt("Enter old password")
+            if(oldpass===logdata[0].password){let newpass= prompt("Enter new password")
+              setlogdata([{...logdata[0],password:newpass}])
             alert('successfully changed')
           }
           else{alert("wrong password")}
-
-          }}>change password</button>
+          
+        }}>change password</button>
+        <h3> hosted show</h3>
           <h3>booked show</h3>
              <Eventscard data={myevent}/>
 

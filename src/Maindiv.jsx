@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from './Navbar'
 import Middlepart from './Middlepart'
 import Eventscard from './Eventscard'
@@ -10,13 +10,15 @@ import Login from './pages/Login'
 import eventdata from './assets/Eventsdata'
 import Profile from './pages/Profile'
 export default function Maindiv() {
-  const {islogin} = useContext(eventdata)
+  const {islogin,logdata} = useContext(eventdata)
   return (
     <> 
    <BrowserRouter>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
+        
+      
        <Route path='event' element={<Events/>}/>
 
 
@@ -24,7 +26,7 @@ export default function Maindiv() {
         
       
         <Route path='login' element={<Login/>}/>
-        <Route path='profile' element={<Profile/>}/>
+        <Route path='profile' element={islogin?<Profile/>:<Home/>}/>
 
     </Routes>
    </BrowserRouter>
