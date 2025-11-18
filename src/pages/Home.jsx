@@ -4,13 +4,13 @@ import Eventscard from '../Eventscard'
 import eventdata from '../assets/Eventsdata'
 
 export default function Home() {
-  const {data,logdata} = useContext(eventdata)
+  const {data} = useContext(eventdata)
     //  useEffect(()=>{ <Route path='/' element={<Home/>}/>},[logdata])
   return (
     <>
     <Middlepart/>
      <h1 className='pe'>Popular Events</h1>
-        <Eventscard data={data}/>
+        <Eventscard data={data.slice(0,4)}/>
      
 
     </>

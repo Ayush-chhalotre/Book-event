@@ -3,4 +3,22 @@ form{
     flex-direction: column;
     height: 80vh;
     gap: 1rem;
+    align-items: center;
 }
+.host{
+    height: 80vh;
+    padding: 1rem;
+    display: flex;justify-content: center;
+}
+form input,textarea{
+    border: none;
+    outline: none;
+    height: 2rem;
+    padding: .5rem;
+ width: 40vw;
+}
+form button{
+    height: 2rem;
+    width: 10rem;
+}
+

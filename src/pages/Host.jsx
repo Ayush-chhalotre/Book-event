@@ -7,6 +7,7 @@ export default function Host() {
   useEffect(()=>{console.log(data)},[data])
   function submitform(e){
     e.preventDefault()
+  
     setdata([...data,{id:data.length,title:e.target.title.value,date:e.target.date.value,time:e.target.time.value,location:e.target.location.value,discreption:e.target.disc.value}])
     
   }
@@ -16,10 +17,10 @@ export default function Host() {
 
    <form onSubmit={submitform}>
   <h1>Host A New Event</h1>
-  <input type="text" name='title' placeholder='Enter title' />
-  <input type="date"  name='date'/>
-  <input type="time" name='time'/>
-  <input type="text" placeholder='location' name='location'/>
+  <input type="text" required name='title' placeholder='Enter title' />
+  <input type="date" required name='date'/>
+  <input type="time" required name='time'/>
+  <input type="text" required placeholder='location' name='location'/>
   <textarea  placeholder='Enter discreption' name='disc'></textarea>
   <input type="text" placeholder='Enter image url' name='image' />
   <button type='submit' >Create Event</button>

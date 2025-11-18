@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import eventdata from './Eventsdata'
 export default function Dataprovider({children}) {
-    const [data, setdata] = useState([{
+  
+let [cityname, setcityname] = useState("")
+let [filterd,setfilterd]= useState([{
     "id": 1,
     "title": "Neon Night Market",
     "date": "2025-12-05",
@@ -40,12 +42,8 @@ export default function Dataprovider({children}) {
       "url": "https://via.placeholder.com/800x450.png?text=AeroTech+Expo",
       "alt": "AeroTech Expo — exhibition hall with drones and aviation tech displays"
     }
-  },
-  
-],
-)
-let [cityname, setcityname] = useState("")
-let [filterd,setfilterd]= useState(data)
+  },])
+    const [data, setdata] = useState(filterd)
 let [logdata,setlogdata]=useState([])
 let [islogin,setislogin]=useState(false)
 let [myevent,setmyevents]=useState([])

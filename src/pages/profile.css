@@ -1,11 +1,31 @@
  .profilediv{
- display: flex;flex-direction: column;
- gap: 2rem;
+ display: flex;
+ /* width: 40vw; */
+ /* margin-left: 30vw; */
+ flex-direction: column;
+ gap: 1.5rem;
  color: hotpink;
  align-items: center;
- /* height: 80vh; */
- justify-content: center;
- height: 80vh;
+ 
+ justify-content: start;
+ min-height: 15vh;
  /* border: 2px solid red; */
- padding: 3rem;
+ /* padding: 3rem; */
+ }
+ .pc{
+    min-height: 80vh;
+    display: flex;
+    align-items: start;
+    padding: 2rem;
+    justify-content: start;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    gap: 2rem;
+ }
+ .profilediv button{
+    height: 2rem;
+    width: 10rem;
+ }
+ .profilediv h3{
+    color: white;
  }
